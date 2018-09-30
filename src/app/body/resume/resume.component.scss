@@ -1,10 +1,38 @@
 .item-head {
     border: 1px solid #777;
     border-radius: 10px;
-    width: 100%;
     font-size: 25px;
     font-weight: bolder;
     padding: 5px;
     margin: 5px 0;
     cursor: pointer;
 }
+
+.info-wrap {
+    text-align: center;
+    img {
+        width: 25%;
+        border-radius: 50%;
+    }
+}
+
+.detail {
+    padding: 5px;
+    visibility: hidden; 
+    opacity: 0;
+    max-height: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    transition: max-height 0.5s ease-out;
+}
+
+.show-detail {
+    visibility: visible;
+    opacity: 1;
+    max-height: 300px;
+    transition: max-height 0.25s ease-in;
+}
+
+b {
+    font-size: 20px;
+}
+

@@ -1,6 +1,7 @@
 <div class="wrap">
-  <div>
+  <div class="info-wrap">
     <h1>PORNPIM PRANAMSRI</h1>
+    <img src="assets/mypic.jpg"/>
     <h2>YOK</h2>
     <p>116/371 Moo5, Phaholyothin54Road, Klongthanon, Saimai, Bangkok 10220</p>
     <i class="fas fa-phone-square"></i> 081-674-7542
@@ -8,8 +9,20 @@
     <p>Hi, eieieieieiei</p>
   </div>
 
-  <div class="item-head">Education <i class="fas fa-sort-down"></i></div>
-  <div>ComputerScience
-      FacultyofScience 2013-present
-      SrinakharinwirotUniversity</div>
+  <div class="item-head" (click)="onShowDetail(0)">EDUCATION <i class="fas fa-sort-down"></i></div>
+  <div class="detail" [ngClass]="{'show-detail': tab[0] === 0}">
+    <b>ComputerScience</b><br/>
+      FacultyofScience (2013 - 2016)<br/>
+      Srinakharinwirot University</div>
+
+  <div class="item-head" (click)="onShowDetail(1)">WORK EXPERIENCE <i class="fas fa-sort-down"></i></div>
+  <div class="detail" [ngClass]="{'show-detail': tab[1] === 1}">
+    <div ><b>Front-end Web Deverloper</b><br/>
+      VERTICE INTERNATIONAL CO.,LTD., Bangkok (2017 - Present)<br/></div>
+    <div><b>Android Deverloper (Internship)</b><br/>
+      FreewillFX Company Limited, Bangkok (2016)<br/></div>
+  </div>
+
+
+    <div class="item-head" (click)="onShowDetail(2)">SKILLS <i class="fas fa-sort-down"></i></div>
 </div>
