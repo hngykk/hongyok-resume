@@ -1,0 +1,20 @@
+$mypurple: #621c8a;
+$myyell: #f8c557;
+button {
+    padding: 10px 30px;
+    border-radius: 10px 10px 0 0;
+    border: none;
+    background-color: #fff;
+    color: $mypurple;
+    font-weight: bolder;
+}
+
+button:hover {
+ background-color: $mypurple;
+ color: #fff;
+}
+
+.selected-btn {
+    background-color: $mypurple;
+    color: #fff;
+}
