@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
-tab = [null,null,null];
+tab = [null,null,null,null];
   constructor() { }
 
   ngOnInit() {

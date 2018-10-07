@@ -3,26 +3,48 @@
     <h1>PORNPIM PRANAMSRI</h1>
     <img src="assets/mypic.jpg"/>
     <h2>YOK</h2>
-    <p>116/371 Moo5, Phaholyothin54Road, Klongthanon, Saimai, Bangkok 10220</p>
+    <p><i class="fas fa-address-card"></i> 116/371 Moo5, Phaholyothin54Road, Klongthanon, Saimai, Bangkok 10220</p>
     <i class="fas fa-phone-square"></i> 081-674-7542
     <i class="fas fa-envelope-square"></i> pornpim.hngyk@gmail.com
-    <p>Hi, eieieieieiei</p>
+    <p>Hi, I would like to apply for Web Programmer position. <br/>
+      You can download resume, final project and transcript at bottom right page.</p>
   </div>
 
-  <div class="item-head" (click)="onShowDetail(0)">EDUCATION <i class="fas fa-sort-down"></i></div>
+  <div class="item-head" (click)="onShowDetail(0)">EDUCATION <span *ngIf="tab[0] === 0">▲</span><span *ngIf="tab[0] !== 0">▼</span></div>
   <div class="detail" [ngClass]="{'show-detail': tab[0] === 0}">
-    <b>ComputerScience</b><br/>
-      FacultyofScience (2013 - 2016)<br/>
-      Srinakharinwirot University</div>
+    <b>Computer Science</b><br/>
+      Faculty of Science (2013 - 2016)<br/>
+      Srinakharinwirot University
+    <p>
+      <b>Senior Project : </b>Develop a mobile application for the information retrieval of SWULibrary.
+Used the Ionic Framework to develop mobile application.
+    </p></div>
 
-  <div class="item-head" (click)="onShowDetail(1)">WORK EXPERIENCE <i class="fas fa-sort-down"></i></div>
+  <div class="item-head" (click)="onShowDetail(1)">WORK EXPERIENCE <span *ngIf="tab[1] === 1">▲</span><span *ngIf="tab[1] !== 1">▼</span></div>
   <div class="detail" [ngClass]="{'show-detail': tab[1] === 1}">
     <div ><b>Front-end Web Deverloper</b><br/>
-      VERTICE INTERNATIONAL CO.,LTD., Bangkok (2017 - Present)<br/></div>
+      VERTICE INTERNATIONAL CO.,LTD., Bangkok (2017 - Present)<br/>
+    <p>
+      Develop web in front-end side by using Angular Framework.
+    </p></div>
     <div><b>Android Deverloper (Internship)</b><br/>
-      FreewillFX Company Limited, Bangkok (2016)<br/></div>
+      FreewillFX Company Limited, Bangkok (2016)<br/>
+    <p>Develop image processing application to detect digit
+      from machine screen useing OpenCV and Tesseract</p></div>
   </div>
 
+    <div class="item-head" (click)="onShowDetail(2)">SKILLS <span *ngIf="tab[2] === 2">▲</span><span *ngIf="tab[2] !== 2">▼</span></div>
+    <div class="detail" [ngClass]="{'show-detail': tab[2] === 2}">
+      <p><b>Programming Language :</b></p> 
+      <p>Typescript, HTML, CSS</p>
+      <p><b>Framework : </b></p><p> Angular , Ionic, Bootstrap</p>
+    </div>
+    <div class="item-head" (click)="onShowDetail(3)">PROJECTS <span *ngIf="tab[3] === 3">▲</span><span *ngIf="tab[3] !== 3">▼</span></div>
+    <div class="detail" [ngClass]="{'show-detail': tab[3] === 3}">
+      <!-- https://carsta.cloud/login -->
+    </div>
 
-    <div class="item-head" (click)="onShowDetail(2)">SKILLS <i class="fas fa-sort-down"></i></div>
-</div>
+    <div class="download">
+      <i class="fas fa-file-pdf"></i>
+    </div>
+  </div>

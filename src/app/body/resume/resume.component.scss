@@ -1,9 +1,10 @@
 .item-head {
-    border: 1px solid #777;
+    // border: 1px solid #777;
+    background-color: #ccc;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bolder;
-    padding: 5px;
+    padding: 15px;
     margin: 5px 0;
     cursor: pointer;
 }
@@ -11,7 +12,8 @@
 .info-wrap {
     text-align: center;
     img {
-        width: 25%;
+        width: 30%;
+        min-width: 200px;
         border-radius: 50%;
     }
 }
@@ -34,5 +36,14 @@
 
 b {
     font-size: 20px;
+}
+
+.download {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    .fas {
+        float: right;
+        font-size: 30px;
+    }
 }
 
