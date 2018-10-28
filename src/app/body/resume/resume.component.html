@@ -3,11 +3,11 @@
     <h1>PORNPIM PRANAMSRI</h1>
     <img src="assets/mypic.jpg"/>
     <h2>YOK</h2>
-    <p><i class="fas fa-address-card"></i> 116/371 Moo5, Phaholyothin54Road, Klongthanon, Saimai, Bangkok 10220</p>
-    <i class="fas fa-phone-square"></i> <br/>081-674-7542
+    <p><i class="fas fa-address-card"></i> 116/371 Moo5, Phaholyothin 54 Road, Klongthanon, Saimai, Bangkok 10220</p>
+    <i class="fas fa-phone-square"></i> 081-674-7542 <br/>
     <i class="fas fa-envelope-square"></i> pornpim.hngyk@gmail.com
     <p>Hi, I would like to apply for Web Programmer position. <br/>
-      You can download resume and transcript at bottom right page.</p>
+      You can download resume PDF version at bottom right page.</p>
   </div>
 
   <div class="item-head" (click)="onShowDetail(0)">EDUCATION <span *ngIf="tab[0] === 0">▲</span><span *ngIf="tab[0] !== 0">▼</span></div>
@@ -41,10 +41,17 @@ Used the Ionic Framework to develop mobile application.
     </div>
     <div class="item-head" (click)="onShowDetail(3)">PROJECTS <span *ngIf="tab[3] === 3">▲</span><span *ngIf="tab[3] !== 3">▼</span></div>
     <div class="detail" [ngClass]="{'show-detail': tab[3] === 3}">
+      <a href="https://carsta.cloud/login" >
+      <img src="assets/carsta.JPG"/></a>
+      <a href="https://kurumajiten.jp/login" >
+        <img src="assets/carbe.JPG"/></a>
       <!-- https://carsta.cloud/login -->
     </div>
 
     <div class="download">
+      <a href="assets/PornpimResume.pdf" download>
       <i class="fas fa-file-pdf"></i>
+      </a>
+      
     </div>
   </div>

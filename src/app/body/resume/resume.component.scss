@@ -30,7 +30,7 @@
 .show-detail {
     visibility: visible;
     opacity: 1;
-    max-height: 300px;
+    max-height: 400px;
     transition: max-height 0.25s ease-in;
 }
 
@@ -41,6 +41,9 @@ b {
 .download {
     border-top: 1px solid #ccc;
     padding: 10px;
+    a {
+    color: #621c8a;
+    }
     .fas {
         float: right;
         font-size: 30px;
